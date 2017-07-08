@@ -169,7 +169,7 @@ public class MainActivity extends AppCompatActivity {
         chart_data.getViewPortHandler().refresh(m, chart_data, false);//将图表动画显示之前进行缩放
 
         chart_data.animateX(1000); // 立即执行的动画,x轴
-       // 至此已经已经完成了左右滑动的效果。
+       // 至，此已经已经完成了左右滑动的效果。
 
 
 
