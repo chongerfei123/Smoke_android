@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:ignore="MissingConstraints">
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="1dp"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.example.zl.smoke.ProgressBarView2
+            android:layout_marginTop="10dp"
+            android:id="@+id/progress"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:visibility="invisible" />
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/chart_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/progress"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_tix"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray"
+        android:gravity="center"
+        android:text="请开始你的表演..."
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+</FrameLayout>
+
